@@ -21,7 +21,7 @@ Run ```npm install ``` to install all the dependencies.
 
 
 ## Step 2
-Run ```npm run start ``` to run it in the development environemnt.This will open the the StarterKit Landing page in http://localhost:8080/
+Run ```npm run start ``` to run it in the development environemnt.This will open the the StarterKit Landing page in http://localhost:3000/
 
 Or
 
