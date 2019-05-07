@@ -1,0 +1,23 @@
+$button-shadow: 0px 2px 5px -2px $darkBlack;
+
+.list-container{
+    @include flexbox();
+    @include flex-wrap(wrap);
+}
+.search-box{
+    input{
+        background-color: transparent;
+    }
+}
+.floating-button{
+    text-decoration: none;
+    position: fixed;
+    right: $normal-padding;
+    bottom: $normal-padding;
+    font-size: 2em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    border-radius: 50%;
+    @include box-shadow($button-shadow);
+}

@@ -1,0 +1,59 @@
+$card-width: 200px;
+$title-height: 2.5em;
+$time-height: 3em;
+
+.note-card {
+    background-color: $indigo50;
+    border: 1px solid $indigo100;
+    width: $card-width;
+    height: $card-width;
+    margin: $normal-padding;
+    color: $black;
+    text-decoration: none;
+    @include flexbox();
+    @include flex-direction(column);
+
+    &.fadeout{
+        @include animation(fadeout .5s);
+    }
+
+    .title {
+        height: $title-height;
+        width: 100%;
+        padding: $small-padding;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1.2em;
+        border-bottom: 1px solid $indigo100;
+        color: $indigo800;
+        position: relative;
+        .remove-button{
+            color: $red800;
+            font-size: 1.5em;
+            position: absolute;
+            right: 5px;
+            top: 0;
+        }
+    }
+
+    .description {
+        padding: $small-padding;
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @include flex(1);
+    }
+
+    .time {
+        height: $time-height;
+        padding: $small-padding;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: .6em;
+        text-align: right;
+    }
+}

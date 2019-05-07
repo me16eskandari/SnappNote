@@ -1,0 +1,25 @@
+.button {
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    cursor: pointer;
+    margin: $small-padding / 2 $small-padding;
+    margin-right: 0;
+    @include button-size($small-padding / 2, $small-padding, 1em, 1.5em, $small-padding / 2);
+
+    &.green-button {
+        @include button-variant($white, $green800, $green900);
+    }
+
+    &.red-button {
+        @include button-variant($white, $red800, $red900);
+    }
+
+    &.white-button {
+        @include button-variant($black, transparent, transparent);
+    }
+
+    &.blue-button{
+        @include button-variant($white, $indigo600, $indigo600);
+    }
+}

@@ -1,0 +1,36 @@
+.view-panel {
+    padding: $normal-padding;
+    @include flex-direction(column);
+    @include flexbox();
+
+    .buttons-container {
+        text-align: right;
+        padding: $small-padding;
+
+        .white-button,
+        .green-button,
+        .red-button {
+            margin: $small-padding / 2 $small-padding;
+            margin-right: 0;
+        }
+    }
+
+    .description-container {
+        @include flex(1);
+        @include flexbox();
+        @include flex-direction(column);
+
+        .description-box {
+            @include flex(1);
+        }
+    }
+
+    .title-container {
+        .title-box {
+            @include placeholder($indigo400);
+            color: $indigo700;
+            border-color: $indigo700;
+            font-size: 1.3em;
+        }
+    }
+}

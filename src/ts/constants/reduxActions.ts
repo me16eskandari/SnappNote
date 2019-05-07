@@ -1,0 +1,6 @@
+export enum ReduxAction {
+    INSERT_NOTE = "INSERT_NOTE",
+    UPDATE_NOTE = "UPDATE_NOTE",
+    REMOVE_NOTE = "REMOVE_NOTE",
+    UPDATE_LIST = "UPDATE_LIST",
+}

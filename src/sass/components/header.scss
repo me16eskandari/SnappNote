@@ -1,0 +1,16 @@
+$header-height: 4em;
+$header-shadow: 0px 2px 5px -2px $darkBlack;
+
+header {
+    padding: 0 $normal-padding;
+    background-color: $indigoA200;
+    height: $header-height;
+    line-height: $header-height;
+    @include box-shadow($header-shadow);
+
+    a.home-link {
+        color: $white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
